@@ -1,0 +1,13 @@
+<div *ngFor="let item of collection">
+    <p>{{item.name}}</p>
+    <img src="../../../assets/images/{{item.id}}.png" alt="" width="100">
+</div>
+
+<!--<div *ngIf="showText; else elseBlock">-->
+<!--    <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A facere in magnam necessitatibus odio pariatur porro quia sequi, soluta voluptas!</div>-->
+<!--</div>-->
+
+<!--<ng-template #elseBlock>-->
+<!--    <div [ngStyle]="{'font-size': '20px', 'color': color}" >Other text</div>-->
+<!--    <div appHighlight>It should be blue color</div>-->
+<!--</ng-template>-->
