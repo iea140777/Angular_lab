@@ -1,27 +1,15 @@
 # Pokemons
+Покедекс: веб-приложение, в котором пользователи могут просматривать информацию о всех покемонах, а также ловить их. 
+1)На главной странице отображается перечень всех существующих покемонов. Пользователь может выбрать режим отображения: в виде карточек (каждый покемон – отдельная красивая карточка с картинкой) или общим списком-таблицей (каждый покемон – строка в таблице без картинки). Оба режима поддерживают пагинацию. Карточки и строки в таблице должны создаваться динамически (структурными директивами). Карточки и строки должны содержать имя покемона и кнопку «Поймать». Если покемон уже пойман, то текст на кнопке меняется на «Отпустить» 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
+2)Расширьте БД, добавьте покемону свойство damage. Есть damage покемона больше 50, то граница его карточки должна быть окрашена в красный цвет. Это свойство не нужно отображать на карточках на главной странице. 
 
-## Development server
+3)Компоненты должны поддерживать концепцию high-ordered components – dump components 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+4)В хедере должна быть ссылка на страницу пойманных покемонов. Там отображаются только те покемоны, которые были пойманы пользователем, режимы отображения те же. 
 
-## Code scaffolding
+5)На главной странице есть search bar, с помощью которого можно искать покемонов по имени. Работает автокомплит. После применения поиска на странице остаются только отфильтрованные покемоны. 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+6)Если кликнуть на имя покемона, пользователь попадает на страницу, посвященную этому покемону. На ней отображается вся информация о покемоне (имя, картинка, пойман или нет, урон). На этой же странице должна появиться кнопка «Редактировать», которая позволит менять значения свойств Покемона (Имя, урон). Кнопка Save сохранит изменения, Cancel отменит и закроет форму редактирования.
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+7)Компоненты и сервисы должны быть покрыты тестами  
